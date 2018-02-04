@@ -1,0 +1,163 @@
+<body>
+    <br>
+    
+    <div class="container" *ngIf="temp">
+
+  <form class="well form-horizontal back" action=" " method="post" id="contact_form">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>
+        
+          <h2 class="center"><b>Login Form</b></h2>
+       
+      </legend><br>
+   
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Username</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="userName" placeholder="UserName" [(ngModel)]="loginuser.userName"  class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Password</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"> <i class="fa fa-key"></i>    
+</span>
+            <input name="pass" [(ngModel)]="loginuser.pass"  placeholder="Password" class="form-control" type="password">
+          </div>
+        </div>
+      </div>
+ 
+    
+
+
+      <!-- Select Basic -->
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-8"><br>
+          <button class="btn btn-login" (click)="signupuser()" >Login</button>
+          <!-- <button type="submit" class="btn btn-login" routerLink='/products'>Login <span class="glyphicon glyphicon-send"></span></button> -->
+        </div>
+           
+      </div>
+    <span class="right">Not Registered Yet? Just <a (click)="signIn()">Sign Up</a> Here</span>
+<!-- <button class="btn btn-success right" (click)="signIn()">Sign Up</button>  -->
+    </fieldset>
+  </form>
+</div>
+
+<!-- /.container -->
+
+<div class="container" *ngIf="!temp">
+
+  <form class="well form-horizontal back" action=" " method="post" id="contact_form">
+        <fieldset>
+
+      <!-- Form Name -->
+      <legend>
+        
+          <h2><b>Registration Form</b></h2>
+       
+      </legend><br>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="first_name" placeholder="First Name" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Last Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Username</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="user_name" placeholder="Username" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Password</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key"></i>   </span>
+            <input name="user_password" placeholder="Password" class="form-control" type="password">
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Mobile No.</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="contact_no" placeholder="(639)" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Select Basic -->
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4"><br>
+          <button type="submit" class="btn btn-warning">SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    <span class="right">Already Registered? Just <b><a (click)="signUp()">Sign In</a> </b>Here</span>
+<!-- <button class="btn btn-success right" (click)="signUp()">Sign in</button>  -->
+    </fieldset>
+  </form>
+</div>
+</body>

@@ -1,0 +1,154 @@
+<body>
+    <br>
+    <div class="container">
+
+  <form class="well form-horizontal back" action=" " method="post" id="contact_form">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>
+        
+          <h2 class="center"><b>Bike Registration Form</b></h2>
+       
+      </legend><br>
+   
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Company Name</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="cname" [(ngModel)]="register.cname">
+          </div> 
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Bike Model</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text" name=" model" [(ngModel)]="register.model">
+          </div> 
+      </div>
+    
+
+<!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">CC</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="cc" [(ngModel)]="register.cc">
+          </div> 
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Year</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="year"  [(ngModel)]="register.year">
+          </div> 
+      </div>
+
+<!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Color</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text" name="color"  [(ngModel)]="register.color">
+          </div> 
+      </div>
+
+        <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Chasis No</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="chasis"  [(ngModel)]="register.chasis">
+          </div> 
+      </div>
+
+        <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Registration Number</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="number"  [(ngModel)]="register.number">
+          </div> 
+      </div>
+         <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Type</label>
+          <div class="col-md-4 inputGroupContainer">  
+             <select name="number" [(ngModel)]="register.type">
+              <option value="">Select</option>
+              <option value="">Yellow</option>
+              <option value="">White</option>
+             </select>
+          </div> 
+      </div>
+
+       <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Registration Place</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="text"  name="place"  [(ngModel)]="register.place">
+          </div> 
+      </div> 
+
+<!-- Text input-->
+
+      <div class="form-group" (change)="showIED($event.target.value)">
+        <label class="col-md-4 control-label">Insurance</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <select name="insur" [(ngModel)]="register.insur">
+                 <option value="">Select</option>
+                 <option value="y">Yes</option>
+                 <option value="n">No</option>
+                </select>
+          </div> 
+      </div>
+        <!-- Text input-->
+
+      <div class="form-group" *ngIf="showInsuranceExpiryDate">
+        <label class="col-md-4 control-label">Insurance Expiry Date</label>
+          <div class="col-md-4 inputGroupContainer">  
+              <input class="form-control" type="date"  name="iedate"  [(ngModel)]="register.iedate">
+          </div> 
+      </div> 
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Fuel Type</label>
+          <div class="col-md-4 inputGroupContainer">  
+             <select name="fuel" [(ngModel)]="register.fuel">
+                   <option value="">Select</option>
+                   <option value="">Petrol</option>
+                   <option value="">Electric</option>
+                  </select>
+          </div> 
+      </div>
+
+           
+
+      <!-- Select Basic -->
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-8"><br>
+          <button type="submit" class="btn btn-warning" (click)="bykRegister()">Submit <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+           
+      </div>
+    </fieldset>
+  </form>
+</div>
+
+<!-- /.container -->
+
+
+</body>
+

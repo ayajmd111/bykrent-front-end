@@ -1,0 +1,37 @@
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Booking Successfully</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+          <table class="table">
+            <thead>
+              <tr>
+                  <th>Company-name</th>
+                  <th>model</th>
+                  <th>capacity</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>{{byk.cname}}</td>
+                  <td>{{byk.model}}</td>
+                  <td>{{byk.cc}}</td>
+               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container">
+            <button type="submit" class="btn btn-success col-md-offset-10" (click)="checkout()">close</button>
+
+          </div>
+
+            

@@ -1,0 +1,164 @@
+body{
+     background: url("F:/bike rental project/new/bike rental/src/assets/img/back.jpg"); 
+    height:734px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-image: url(" https://www.wallpaperup.com/uploads/wallpapers/2013/08/20/136797/cae25dd3607cc9b121fd3ab51c393b00-700.jpg"); */
+   
+}
+
+
+
+.search{
+    position:absolute;
+    margin-top:12%;
+    margin-left:10%;
+    padding:10px 76px;
+    border-radius:5px;
+    
+}
+/* .searchButton{
+    position:absolute;
+    margin-top:12%;
+    margin-left: 40%;
+} */
+
+.loginButton:hover {
+	background-color:#5cbf2a;
+}
+/* .registerButton{
+    position:absolute;
+    margin-top:1%;
+    margin-left: 60%;
+    background-color: black;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:4px 26px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+} */
+/* .myButton {
+	background-color:#faa61a;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:3px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Trebuchet MS;
+	font-size:21px;
+	font-weight:bold;
+	padding: 8px 36px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+} */
+/* .myButton:hover {
+	background-color:#5cbf2a;
+} */
+/* .myButton:active {
+	position:relative;
+	top:1px;
+} */
+
+.book{
+     margin-top:5%;
+    margin-left: 20%;
+    font-family: 'Questrial', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: white;
+}
+
+.right{
+    float: right;
+}
+
+a {
+    color: #fff;
+    display: block;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.search-bar {
+ margin-top: 5%; 
+ /* border: 1px solid black;  */
+position: absolute;
+    /* bottom: 20px; */
+    /* z-index: 2; */
+    margin-left: 10%;
+    width: 80%;
+    background: rgba(19, 18, 18, 0.726);
+    /* transition: all .1s ease-in .1s; */
+}
+.thidivcss{
+margin-top: 35px;
+margin-bottom: 35px;
+}
+
+
+.inputfield{
+    background-color: transparent;
+    border: none;
+
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 2rem;
+    color:white;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+input::placeholder, .white {
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* .searchButton{
+    color:red;
+} */
+
+.searchButton{
+    /* position:absolute; */
+    background-color: #faa61a;
+    border-radius:5px;
+    float: right;
+    color: white;
+    /* margin-top:1%;
+    margin-left: 90%;
+    
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	padding:4px 26px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627; */
+    z-index: 3;
+}
+marquee{
+    position: absolute;
+    margin-top:  -1.35%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

@@ -1,0 +1,112 @@
+<div class="container" >
+
+  <form class="well form-horizontal back"  method="post" #ayaj="ngForm">
+    <fieldset>
+
+      <!-- Form Name -->
+      <legend>
+        
+          <h2><b>Registration Form</b></h2>
+       
+      </legend><br>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">First Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="first_name" placeholder="First Name" name="firstName"  [(ngModel)]="register.firstName" class="form-control" type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Last Name</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="last_name" placeholder="Last Name" class="form-control" name="lastName"  [(ngModel)]="register.lastName"  type="text">
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Username</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="user_name" placeholder="Username" class="form-control" name="userName"  [(ngModel)]="register.userName"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Password</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="user_password" placeholder="Password" class="form-control" name="pass"  [(ngModel)]="register.pass" type="password">
+          </div>
+        </div>
+      </div>
+
+     
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label">E-Mail</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" placeholder="E-Mail Address" class="form-control" name="email"  [(ngModel)]="register.email"  type="text">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Text input-->
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Mobile No.</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+            <input name="contact_no" placeholder="(639)" class="form-control" name="mnumber"  [(ngModel)]="register.mnumber"  type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4 control-label">Upload File</label>
+        <div class="col-md-4 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-file"></i></span>
+            <input name="img" placeholder="upload file" class="form-control" (change)="fileChangeEvent($event)"   [(ngModel)]="register.img"  type="file">
+            <button type="submit" (click)="upload()">Upload</button>
+
+          </div>
+        </div>
+      </div>
+      <!-- Select Basic -->
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4"><br>
+          <button type="submit" class="btn btn-warning" (click)="registeruser(ayaj)">SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+</div>
+
+<!-- /.container -->
